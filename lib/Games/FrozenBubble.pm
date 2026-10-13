@@ -1,6 +1,6 @@
 package Games::FrozenBubble;
 
-our $VERSION = '2.213'; #Cpan version
+our $VERSION = '3.000'; # TNG - Next Generation release
 
 1;
 

@@ -3,7 +3,7 @@
 #
 #                          Frozen-Bubble
 #
-# Copyright (c) 2000-2012 The Frozen-Bubble Team
+# Copyright (c) 2000-2026 The Frozen-Bubble Team
 #
 # Originally sponsored by Mandriva <http://www.mandriva.com/>
 #
@@ -105,7 +105,7 @@ $KEYS                           = {
                   send_malus_to_rp4 => SDLK_F4, send_malus_to_all => SDLK_F10, next_playlist_elem => SDLK_TAB, save_record => SDLK_PRINT,
                   toggle_music => SDLK_F11, toggle_sound => SDLK_F12, raise_volume => SDLK_KP_PLUS, lower_volume => SDLK_KP_MINUS }
 };
-$sdl_flags                      = SDL_HWSURFACE | SDL_DOUBLEBUF | SDL_HWACCEL | SDL_ASYNCBLIT;
+$sdl_flags                      = SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC;
 $mixer                          = 0;
 $graphics_level                 = 3;
 @PLAYERS                        = qw(p1 p2);
@@ -137,7 +137,7 @@ our $is_rtl = $ENV{LANGUAGE} =~ /^fa/;
 print "        [[ Frozen-Bubble-$Games::FrozenBubble::VERSION ]]\n\n";
 print '  http://www.frozen-bubble.org/
 
-  Copyright (c) 2000-2012 The Frozen-Bubble Team.
+  Copyright (c) 2000-2026 The Frozen-Bubble Team.
 
     Artwork: Alexis Younes
              Amaury Amblard-Ladurantie
@@ -6477,7 +6477,7 @@ frozen-bubble-editor
 
 =head1 COPYRIGHT
 
-Copyright © 2000-2012 The Frozen-Bubble Team.
+Copyright © 2000-2026 The Frozen-Bubble Team.
 
 This is Free Software; this software is licensed under the GPL version 2, as published by the Free Software Foundation.
 There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
